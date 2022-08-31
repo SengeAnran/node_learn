@@ -1,0 +1,10 @@
+{
+  "name": "watching history",
+  "version": "1.0.0",
+  "description": "get history urls",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["tabs"]
+}
