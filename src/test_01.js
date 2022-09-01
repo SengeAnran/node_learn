@@ -1,6 +1,8 @@
 const express = require('express');
+const session = require('express-session')
 const router = require('./router/index');
 const path = require('path');
+const mysql = require('mysql');
 const app = express();
 const fpath = path.join(__dirname ,'./clock')
 const mw = (req, res, next) => {
@@ -12,6 +14,11 @@ const mw2 = (req, res, next) => {
   next();
 }
 console.log(fpath);
+app.use(session({
+  secret:'keyboard cat',
+  resave: 'false',
+  saveUninitialized: true,
+}))
 app.use(express.static(fpath));
 app.use(mw);
 app.use(mw2);
