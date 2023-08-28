@@ -1,0 +1,30 @@
+{
+  "name": "node_learn",
+  "version": "1.0.0",
+  "description": "node.js学习",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SengeAnran/node_learn.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SengeAnran/node_learn/issues"
+  },
+  "homepage": "https://github.com/SengeAnran/node_learn#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-jwt": "^6.1.1",
+    "express-session": "^1.17.3",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.22.2",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "qs": "^6.11.0"
+  }
+}
